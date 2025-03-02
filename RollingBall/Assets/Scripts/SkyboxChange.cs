@@ -10,5 +10,7 @@ public class SkyboxChange : MonoBehaviour
 
         RenderSettings.skybox = skyboxes[index];
         DynamicGI.UpdateEnvironment();
+
+        SkyboxManager.instance.ChangeSkybox(skyboxes[index]);
     }
 }
